@@ -1,0 +1,127 @@
+html {
+  background-color: #2F2727; 
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background: -webkit-gradient(radial, center center, 300, center center, 460, from(#8599A0), to(#2F2727)); 
+  background: -webkit-radial-gradient(circle, #8599A0, #2F2727);
+  background: -moz-radial-gradient(circle, #8599A0, #2F2727);
+  background: -ms-radial-gradient(circle, #8599A0, #2F2727);
+}
+
+.btn-group .button {
+    background-color: #ECECEC;
+    border: 1px black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    float: left;
+}
+
+.btn-group .button:not {
+   border-right: none; /* doesn't make 2 borders */
+}
+
+.btn-group .button:hover {
+   background-color: #E1ECA1;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px); /* button animation */
+}
+
+.img {
+  display: block;
+  height: 100%;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.image-cropper {
+  width: 100px;
+  height: 100px;
+  overflow: hidden; /*takes away edges and makes it circlar*/
+  border-radius: 50%;
+  margin: auto;
+}
+
+.vid-center { 
+  display: block;
+  margin: 0 auto; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+ 
+p.imgft {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF
+}
+
+h1 {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 40px;
+  color: #FF0101;
+}
+
+h2 {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 25px;
+  color: #ECE16D;
+}
+
+h3 {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 25px;
+  color: #4D08FF;
+}
+
+h4 {
+  font-family: Helvetica;
+  font-size: 50px;
+  color: #22A3D0;
+}
+
+div.box {
+  width: 200px;
+  border: 1px #000000
+}
+
+div.a {
+	word-wrap: normal;
+}
+
+
+#p1 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 16px;
+  color: #EC7F61;
+  font-weight: 400; /*changing font weight makes it more thin or thicker*/
+}
+
+#pint {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 24px;
+  color: #4D08FF;
+  font-weight: 700;
+}
+
+    canvas{
+     position:absolute;
+     top:0;bottom:100;right:0;left:100;
+     margin:auto;
+    }
+
+
+
+
