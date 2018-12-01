@@ -1,33 +1,67 @@
 html {
-  background-color: #2F2727; 
-  background-position: center center; 
+  background-color: #000000; 
   background-repeat: no-repeat;
-  background: -webkit-gradient(radial, center center, 300, center center, 460, from(#8599A0), to(#2F2727)); 
-  background: -webkit-radial-gradient(circle, #8599A0, #2F2727);
-  background: -moz-radial-gradient(circle, #8599A0, #2F2727);
-  background: -ms-radial-gradient(circle, #8599A0, #2F2727);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #359DA4;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
 }
 
 .btn-group .button {
-    background-color: #ECECEC;
-    border: 1px black;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    width: 150px;
-    float: left;
+  background-color: #ECECEC;
+  border: 1px black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+  float: left;
 }
 
 .btn-group .button:not {
-   border-right: none; /* doesn't make 2 borders */
+  border-right: none; /* doesn't make 2 borders */
 }
 
 .btn-group .button:hover {
-   background-color: #E1ECA1;
+  background-color: #E1ECA1;
 }
 
 .button:active {
@@ -98,7 +132,7 @@ div.box {
 }
 
 div.a {
-	word-wrap: normal;
+  word-wrap: normal;
 }
 
 
@@ -116,11 +150,14 @@ div.a {
   font-weight: 700;
 }
 
-    canvas{
-     position:absolute;
-     top:0;bottom:100;right:0;left:100;
-     margin:auto;
-    }
+canvas {
+  position:absolute;
+  top:0;
+  bottom:100;
+  right:0;
+  left:100;
+  margin:auto;
+}
 
 
 
