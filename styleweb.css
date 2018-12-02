@@ -14,9 +14,10 @@ html {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  -webkit-backface-visibility: hidden;
 }
 
-.sidenav a {
+.sidenav a { /* style for the text in navmenu */
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -35,10 +36,11 @@ html {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+
 }
 
 #main {
-  transition: margin-left .5s;
+  transition: margin-left .5s; /* main is used for transitioning text when opening the nav menu */
   padding: 16px;
 }
 
@@ -52,7 +54,7 @@ html {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  width: 150px;
+  width: 200px;
   float: left;
 }
 
@@ -103,27 +105,9 @@ p.imgft {
 }
 
 h1 {
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 40px;
-  color: #FF0101;
-}
-
-h2 {
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 25px;
-  color: #ECE16D;
-}
-
-h3 {
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 25px;
-  color: #4D08FF;
-}
-
-h4 {
   font-family: Helvetica;
   font-size: 50px;
-  color: #22A3D0;
+  color: #359DA4;
 }
 
 div.box {
@@ -159,6 +143,9 @@ canvas {
   margin:auto;
 }
 
-
-
-
+#plog {
+  font-family: Arial;
+  font-size: 20px;
+  color: white;
+  font-weight: 300;
+}
