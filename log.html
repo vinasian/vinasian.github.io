@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <link rel="stylesheet" href="styleweb.css">
+	<meta charset="UTF-8">
+	<title>
+	  Log
+	</title>
+  </head>
+</html>
+
+
+<script>
+  function openNav() {
+    document.getElementById("theSidenav").style.width = "200px";
+    document.getElementById("main").style.marginLeft = "300px";
+	document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+  function closeNav() {
+    document.getElementById("theSidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<div id="theSidenav" class="sidenav">
+  <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="website.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="log.html">Log</a>
+</div>
+<span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span> <!-- Specific function that opens and closes the nav menu -->
+
+<body id = "main"> <!-- main id is used for word wrap when using navmenu -->
+  <h1>
+  Change Log
+  </h1>
+  <p id="plog">
+    <ul id="plog">
+	  <li>October 29: Reworked website</li>
+	  <li>November 7: Changed background, removed excess h elements from css</li>
+	  <li>November 10: Added Video, Audio, SVG, and Canvas. Added button navigation</li>
+	  <li>November 20: Reworked Navigation, buttons are now used as links for achievements</li>
+	  <li>November 31: Added About Me and Log page, reworked home page.</li>
+	  <li>December 1: Changed background, may change again. Cleaned up HTML and CSS code, removed unused ids and classes.</li>
+  </p>
