@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-
-<html>
+<html lang ="en">
   <head>
-    <link rel="stylesheet" href="styleweb.css">
+    <link rel="stylesheet" href="teststyle.css">
+	<meta charset="UTF-8">
+	<title>
+	  Cipher
+	</title>
   </head>
 </html>
 
-<body>
- 
-<svg height="100" width="200">
-  <text x="0" y="15" fill="blue" style="font-family:Verdana;font-size:24;" transform="rotate(40 20,40)">WOW!!</text>
-  ERROR
-</svg>
+<script>
+  function openNav() {
+    document.getElementById("theSidenav").style.width = "200px";
+    document.getElementById("main").style.marginLeft = "300px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+  function closeNav() {
+    document.getElementById("theSidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+  <div id="theSidenav" class="sidenav">
+  <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="website.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="log.html">Log</a>
+</div>
+<span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
+
+<body id="main">
+  <h1>A Caesar Cipher</h1>
+  <p id="proc">
+    Type what you want encrypted here
+  </p>
+  <input id="in">
+  <button type="button" onclick="CCfunct()">process button</button>
+  <p id="out">
+  </p>
+  <script>
+    function CCfunct() {
+	  var testout;
+      var testin;
+      testin = document.getElementById("in").value;
+      testout = "";
+	  var cnp = 0;
+	  while (cnp < 50) {
+	    testout = testout + String.fromCharCode(testin.charCodeAt(cnp) * 10);
+        cnp = cnp + 1;
+	  }
+    document.getElementById("out").innerHTML = testout;
+  }
+  </script>
 </body>
