@@ -34,11 +34,12 @@
   Achievements
   </h1>
   <svg height="100" width="200">
-    <text x="0" y="15" fill="blue" style="font-family:Verdana;font-size:24;" transform="rotate(40 20,40)">WOW!!</text>
-    ERROR
+    <text x="0" y="15" fill="blue" style="font-family:Verdana;font-size:24;" transform="rotate(40 20,40)">WOW!!</text> <!-- transform rotates the svg -->
+    ERROR <!-- shows only if the svg cannot be displayed -->
   </svg>
   <canvas id="myCanvas" width="200" height="130">
-    Your browser does not support the HTML5 canvas tag.</canvas>
+    Your browser does not support the HTML5 canvas tag.
+  </canvas>
   <script>
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
@@ -48,18 +49,18 @@
     ctx.strokeText("NICE", canvas.width/2, canvas.height/2); 
   </script>
   <div class="btn-group">
-      <form action="https://github.com/vinasian">
+    <form action="https://github.com/vinasian"> <!-- form action allows me to use button as links to other pages -->
       <button class="button">GitHub</button>
 	</form>
       <form action="https://www.codecademy.com/vinasian">
 	    <button class="button">Codeacdemy</button>
 	  </form>
-	<form action="fieldreport.pdf">
-	  <button class="button">Fields Report</button>
-	</form>
     <form action="https://scratch.mit.edu/projects/245202248/"> 
-	  <button class="button">Scratch Project</button> <br> <br>
-	</form> 
+	  <button class="button">Scratch Project</button>
+	</form>
+	<form action="test.html"> 
+	  <button class="button">Caesar Cipher</button> <br> <br>
+	</form>
   </div>
   <p id="pint">
     I have taken..
